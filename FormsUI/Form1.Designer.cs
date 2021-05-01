@@ -71,7 +71,6 @@ namespace FormsUI
             this.lblDateTimeNow = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.timer2 = new System.Windows.Forms.Timer(this.components);
-            this.button1 = new System.Windows.Forms.Button();
             this.btnStop = new System.Windows.Forms.Button();
             this.btnStart = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgwTasks)).BeginInit();
@@ -454,9 +453,9 @@ namespace FormsUI
             this.lblDateTimeNow.Font = new System.Drawing.Font("Arial", 17.75F);
             this.lblDateTimeNow.Location = new System.Drawing.Point(37, 50);
             this.lblDateTimeNow.Name = "lblDateTimeNow";
-            this.lblDateTimeNow.Size = new System.Drawing.Size(38, 27);
+            this.lblDateTimeNow.Size = new System.Drawing.Size(71, 27);
             this.lblDateTimeNow.TabIndex = 0;
-            this.lblDateTimeNow.Text = "00";
+            this.lblDateTimeNow.Text = "00:00";
             // 
             // timer1
             // 
@@ -469,15 +468,6 @@ namespace FormsUI
             this.timer2.Enabled = true;
             this.timer2.Interval = 1000;
             this.timer2.Tick += new System.EventHandler(this.timer2_Tick);
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(0, 0);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 19;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
             // 
             // btnStop
             // 
@@ -506,7 +496,6 @@ namespace FormsUI
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(926, 505);
-            this.Controls.Add(this.button1);
             this.Controls.Add(this.btnDelete);
             this.Controls.Add(this.gbxReminder);
             this.Controls.Add(this.lblSearchByStatus);
@@ -574,7 +563,6 @@ namespace FormsUI
         private System.Windows.Forms.Label lblReminder;
         private System.Windows.Forms.TextBox tbxReminder;
         private System.Windows.Forms.Button btnStop;
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button btnStart;
     }
 }

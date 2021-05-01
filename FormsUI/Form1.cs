@@ -98,15 +98,6 @@ namespace FormsUI
             }
         }
 
-
-
-        private void btnReminder_Click(object sender, EventArgs e)
-        {
-            PopupNotifier popup = new PopupNotifier();
-            popup.TitleText = "Reminder Message";
-            popup.ContentText = (DateTime.Now - Convert.ToDateTime(dgwTasks.CurrentRow.Cells[5])).ToString();
-            popup.Popup();// show  
-        }
         
 
         private void btnAdd_Click(object sender, EventArgs e)
